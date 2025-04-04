@@ -8,6 +8,43 @@
     <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <script src="https://kit.fontawesome.com/297137adfb.js" crossorigin="anonymous"></script>
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+
+    <!-- styles -->
+    <style>
+        .font-inter {
+            font-family: "Inter", sans-serif;
+            font-style: normal;
+        }
+
+        .font-mulish {
+            font-family: "Mulish", sans-serif;
+            font-style: normal;
+        }
+
+        .button {
+            color: #FFF;
+            font-size: 20px;
+            font-weight: 700;
+            border-radius: 30px;
+            background: #797DFC;
+            padding: 20px 32px;
+        }
+
+        .text-light-gray {
+            color: rgba(18, 19, 45, 0.60);
+            font-feature-settings: 'liga' off, 'clig' off;
+            font-family: Inter;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 26px;
+        }
+    </style>
 </head>
 <body>
     <header class="mx-3 md:mx-10 lg:mx-32">
@@ -36,14 +73,14 @@
                     <li title="Add User"><a href=""><i class="fa-solid fa-user-plus text-xl"></i></a></li>
                     <li title="Report"><a href=""><i class="fa-solid fa-flag text-xl"></i></a></li>
                   </ul>
-                  <button class="btn btn-primary rounded-3xl ml-4 px-8 py-4">Sign In</button>
+                  <button class="btn button font-mulish">Sign In</button>
                 </div>
               </div>
         </nav>
 
         <div class="banner h-[500px] bg-cover bg-bottom bg-[#12132D] text-white p-8 md:p-16 lg:p-24 rounded-4xl" style="background-image: url('resources/images/bgbanner.png');">
             <div>
-                
+
             </div>
             <div></div>
         </div>
