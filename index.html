@@ -52,6 +52,16 @@
             font-weight: 800;
             line-height: 30px;
         }
+
+        @media screen and (min-width: 768px) {
+            .button {
+                font-size: 14px;
+                font-weight: 700;
+                border-radius: 15px;
+                padding: 10px 20px;
+                border: 0px;
+            }
+        }
     </style>
 </head>
 <body>
@@ -81,27 +91,44 @@
                     <li title="Add User"><a href=""><i class="fa-solid fa-user-plus text-xl"></i></a></li>
                     <li title="Report"><a href=""><i class="fa-solid fa-flag text-xl"></i></a></li>
                   </ul>
-                  <button class="btn button font-mulish">Sign In</button>
+                  <button class="btn button font-mulish ml-6">Sign In</button>
                 </div>
               </div>
         </nav>
 
-        <div class="banner h-[500px] bg-cover bg-bottom bg-[#12132D] text-white p-8 md:p-16 lg:p-24 rounded-4xl" style="background-image: url('resources/images/bgbanner.png');">
-            <div class="flex flex-col gap-8">
+        <div class="banner h-fit bg-cover bg-bottom bg-[#12132D] text-white p-8 md:p-16 lg:p-24 rounded-4xl" style="background-image: url('resources/images/bgbanner.png');">
+            <div class="flex flex-col lg:flex-row justify-center items-center gap-16 lg:gap-28">
                 <!-- left -->
-                <div class="flex flex-col gap-8">
-                    <h1 class="text-6xl font-mulish font-black">Welcome to the <span class="text-[#797DFC]">Retro</span> Forum</h1>
-                    <p class="text-[#FFFFFFCC] font-mulish font-medium text-xl">Share your favorite opinion and win and wp forum coffee mug!</p>
+                <div class="flex flex-col gap-8 lg:w-4/5">
+                    <h1 class="text-4xl lg:text-6xl font-mulish font-black">Welcome to the <span class="text-[#797DFC]">Retro</span> Forum</h1>
+                    <p class="text-[#FFFFFFCC] w-6/7 font-mulish font-medium text-base lg:text-xl">Share your favorite opinion and win and wp forum coffee mug!</p>
 
-                    <div class="flex gap-2 bg-white rounded-3xl p-2 w-96">
-                        <input class="w-full" type="text">
+                    <div class="flex lg:w-5/7 gap-2 bg-white rounded-3xl p-2 lg:mr-10">
+                        <input placeholder="Search here anything" class="w-full placeholder:text-[#03071280] px-2" type="text">
                         <button class="btn button">Search</button>
                     </div>
                 </div>
 
                 <!-- right -->
-                <div>
-
+                <div class="items-center bg-white rounded-4xl text-[#12132DCC] font-mulish font-medium text-base lg:text-2xl lg:ml-20 w-4/5 lg:w-4/7">
+                    <ul class="m-5 lg:m-12 flex flex-col gap-6">
+                        <li class="flex justify-between">
+                            <p>Registered Users</p>
+                            <p>01</p>
+                        </li>
+                        <li class="flex justify-between">
+                            <p>Forum</p>
+                            <p>05</p>
+                        </li>
+                        <li class="flex justify-between">
+                            <p>Topics</p>
+                            <p>01</p>
+                        </li>
+                        <li class="flex justify-between">
+                            <p>Replies</p>
+                            <p>01</p>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>
