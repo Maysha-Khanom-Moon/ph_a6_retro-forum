@@ -32,7 +32,7 @@
             font-weight: 700;
             border-radius: 30px;
             background: #797DFC;
-            padding: 20px 32px;
+            padding: 24px 32px;
             border: 0px;
         }
 
@@ -53,19 +53,17 @@
             line-height: 30px;
         }
 
-        @media screen and (min-width: 768px) {
+        @media screen and (max-width: 768px) {
             .button {
                 font-size: 14px;
-                font-weight: 700;
                 border-radius: 15px;
                 padding: 10px 20px;
-                border: 0px;
             }
         }
     </style>
 </head>
 <body>
-    <header class="mx-3 md:mx-10 lg:mx-32">
+    <header class="mx-3 md:mx-10 lg:mx-36">
         <nav class="my-5 md:my-8 lg:my-12">
             <div class="navbar bg-base-100 flex items-center">
                 <div class="navbar-start">
@@ -96,21 +94,21 @@
               </div>
         </nav>
 
-        <div class="banner h-fit bg-cover bg-bottom bg-[#12132D] text-white p-8 md:p-16 lg:p-24 rounded-4xl" style="background-image: url('resources/images/bgbanner.png');">
-            <div class="flex flex-col lg:flex-row justify-center items-center gap-16 lg:gap-28">
+        <div class="banner h-fit bg-cover bg-bottom bg-[#12132D] text-white p-8 md:p-16 lg:p-28 rounded-4xl" style="background-image: url('resources/images/bgbanner.png');">
+            <div class="flex flex-col lg:flex-row justify-between items-center gap-10 lg:gap-0">
                 <!-- left -->
-                <div class="flex flex-col gap-8 lg:w-4/5">
+                <div class="flex flex-col gap-5 lg:gap-8 lg:w-4/7">
                     <h1 class="text-4xl lg:text-6xl font-mulish font-black">Welcome to the <span class="text-[#797DFC]">Retro</span> Forum</h1>
                     <p class="text-[#FFFFFFCC] w-6/7 font-mulish font-medium text-base lg:text-xl">Share your favorite opinion and win and wp forum coffee mug!</p>
 
-                    <div class="flex lg:w-5/7 gap-2 bg-white rounded-3xl p-2 lg:mr-10">
-                        <input placeholder="Search here anything" class="w-full placeholder:text-[#03071280] px-2" type="text">
-                        <button class="btn button">Search</button>
+                    <div class="flex lg:w-7/9 gap-2 bg-white rounded-4xl p-2 lg:mr-10">
+                        <input id="search-input" placeholder="Search here anything" class="border-0 w-full placeholder:text-[#03071280] px-2 text-black text-sm lg:text-xl placeholder:font-normal font-bold mx-3 rounded-lg outline-violet-400" type="text">
+                        <button id="search-button" class="btn button font-mulish">Search</button>
                     </div>
                 </div>
 
                 <!-- right -->
-                <div class="items-center bg-white rounded-4xl text-[#12132DCC] font-mulish font-medium text-base lg:text-2xl lg:ml-20 w-4/5 lg:w-4/7">
+                <div class="items-center bg-white rounded-4xl text-[#12132DCC] font-mulish font-medium text-base lg:text-2xl lg:ml-20 w-4/5 lg:w-3/7">
                     <ul class="m-5 lg:m-12 flex flex-col gap-6">
                         <li class="flex justify-between">
                             <p>Registered Users</p>
@@ -141,5 +139,9 @@
     <footer>
 
     </footer>
+
+
+    <!-- scripts -->
+    <script src="scripts/index.js"></script>
 </body>
 </html>
