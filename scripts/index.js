@@ -26,9 +26,9 @@ function letsDiscussDisplay(posts) {
                 <img class="w-18 h-18 rounded-2xl" src="${post.image}" alt="">
             </div>
             <div class="flex flex-col">
-                <pre class="mb-3 font-inter font-medium text-sm text-[#12132DCC]"># Music    Author: Awlad Hossain</pre>
-                <h1 class="mb-4 let-title">10 Kids Unaware of Their Halloween Costume</h1>
-                <p class="text-extra-light-gray">It’s one thing to subject yourself to ha Halloween costume mishap because, hey that’s your prerogative</p>
+                <pre class="mb-3 font-inter font-medium text-sm text-[#12132DCC]"># ${post.category}     Author: ${post.author.name}</pre>
+                <h1 class="mb-4 let-title">${post.title}</h1>
+                <p class="text-extra-light-gray">${post.description}</p>
                 <hr class="my-3 lg:my-5 border-dashed border-[#12132D40]">
                             
                 <div class="flex justify-between">
