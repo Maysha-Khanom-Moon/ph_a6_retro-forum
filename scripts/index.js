@@ -16,15 +16,14 @@ const letsDiscussLeftSection = document.getElementById('lets-left-section');
 function letsDiscussDisplay(posts) {
     posts.forEach(post => {
         // console.log(post);
-        
 
-        letsDiscussLeftSection.innerHTML = 
+
+        letsDiscussLeftSection.innerHTML += 
         `
         <div class="p-6 lg:p-10 flex flex-col lg:flex-row gap-3 lg:gap-6 rounded-3xl bg-[#797DFC1A]">
-        <-- images -->
             <div class="relative">
-                <div class="absolute left-15 h-4 w-4 bg-red-500 rounded-full"></div>
-                <img class="w-18 h-18 rounded-2xl" src="https://i.ibb.co/VYGSkLz/pexels-jeshootscom-442576.jpg" alt="">
+                <div class="absolute left-15 h-4 w-4 rounded-full ${post.isActive ? 'bg-[#10B981]': 'bg-[#FF3434]'}"></div>
+                <img class="w-18 h-18 rounded-2xl" src="${post.image}" alt="">
             </div>
             <div class="flex flex-col">
                 <pre class="mb-3 font-inter font-medium text-sm text-[#12132DCC]"># Music    Author: Awlad Hossain</pre>
