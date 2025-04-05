@@ -1,11 +1,14 @@
 // let's discuss section
 const letsDiscussUrl = "https://openapi.programming-hero.com/api/retro-forum/posts";
+let Posts = [];
 
 const letsDiscuss = async () => {
     const res = await fetch(letsDiscussUrl);
     const letsDiscussData = await res.json();
     const posts = letsDiscussData.posts;
     // console.log(data);
+
+    Posts = posts;
     letsDiscussDisplay(posts); 
 }
 letsDiscuss();
@@ -16,7 +19,6 @@ const letsDiscussLeftSection = document.getElementById('lets-left-section');
 function letsDiscussDisplay(posts) {
     posts.forEach(post => {
         // console.log(post);
-
 
         letsDiscussLeftSection.innerHTML += 
         `
@@ -47,10 +49,27 @@ function letsDiscussDisplay(posts) {
                         </div>
                     </div>
 
-                    <button onClick="readMe()" class="btn read-me-btn"><i class="fa-regular fa-envelope-open"></i></button>
+                    <button onClick="readMe('${post.id}')" class="btn read-me-btn"><i class="fa-regular fa-envelope-open"></i></button>
                 </div>
             </div>
         </div>
         `
     })
+}
+
+// right
+const letsDiscussRightSection = document.getElementById('lets-right-body');
+const readCount = document.getElementById('read-count');
+
+function readMe(id) {
+    if (Posts.find(p => p.id == id)) {
+        let read_count = parseInt(readCount.innerText);
+        read_count++;
+        readCount.innerText = read_count;
+
+        letsDiscussRightSection.innerHTML +=
+        `
+        
+        `
+    }
 }
