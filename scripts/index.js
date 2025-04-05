@@ -62,14 +62,21 @@ const letsDiscussRightSection = document.getElementById('lets-right-body');
 const readCount = document.getElementById('read-count');
 
 function readMe(id) {
-    if (Posts.find(p => p.id == id)) {
+    let post = Posts.find(p => p.id == id);
+    if (post) {
         let read_count = parseInt(readCount.innerText);
         read_count++;
         readCount.innerText = read_count;
 
         letsDiscussRightSection.innerHTML +=
         `
-        
+        <div class="flex justify-between gap-4 bg-white p-4 rounded-xl">
+            <p>${post.title}</p>
+            <div class="flex gap-3 items-center">
+                <i class="fa-regular fa-eye"></i>
+                <p>${post.view_count}</p>
+            </div>
+        </div>
         `
     }
 }
