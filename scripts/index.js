@@ -47,7 +47,7 @@ function letsDiscussDisplay(posts) {
                         </div>
                     </div>
 
-                    <button id="read-me" class="btn read-me-btn"><i class="fa-regular fa-envelope-open"></i></button>
+                    <button onClick="readMe()" class="btn read-me-btn"><i class="fa-regular fa-envelope-open"></i></button>
                 </div>
             </div>
         </div>
