@@ -35,15 +35,15 @@ function letsDiscussDisplay(posts) {
                     <div class="flex justify-start gap-6 text-extra-light-gray">
                         <div class="flex items-center gap-3">
                             <i class="fa-regular fa-message"></i>
-                            <p>560</p>
+                            <p>${post.comment_count}</p>
                         </div>
                         <div class="flex items-center gap-3">
                             <i class="fa-regular fa-eye"></i>
-                            <p>1,568</p>
+                            <p>${post.view_count}</p>
                         </div>
                         <div class="flex items-center gap-3">
                             <i class="fa-regular fa-clock"></i>
-                            <p>5 min</p>
+                            <p>${post.posted_time} min</p>
                         </div>
                     </div>
 
