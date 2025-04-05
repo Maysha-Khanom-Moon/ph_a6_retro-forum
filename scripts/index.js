@@ -22,7 +22,7 @@ function letsDiscussDisplay(posts) {
         `
         <div class="p-6 lg:p-10 flex flex-col lg:flex-row gap-3 lg:gap-6 rounded-3xl bg-[#797DFC1A]">
             <div class="relative">
-                <div class="absolute left-15 h-4 w-4 rounded-full ${post.isActive ? 'bg-[#10B981]': 'bg-[#FF3434]'}"></div>
+                <div class="absolute left-15 bottom-15 h-4 w-4 rounded-full border-white border-2 ${post.isActive ? 'bg-[#10B981]': 'bg-[#FF3434]'}"></div>
                 <img class="w-18 h-18 rounded-2xl" src="${post.image}" alt="">
             </div>
             <div class="flex flex-col">
