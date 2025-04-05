@@ -24,10 +24,10 @@ function letsDiscussDisplay(posts) {
         `
         <div class="p-6 lg:p-10 flex flex-col lg:flex-row gap-3 lg:gap-6 rounded-3xl bg-[#797DFC1A]">
             <div class="relative">
-                <div class="absolute left-15 bottom-15 h-4 w-4 rounded-full border-white border-2 ${post.isActive ? 'bg-[#10B981]': 'bg-[#FF3434]'}"></div>
+                <div class="absolute left-14.5 lg:left-13 top-[-4px] h-4 w-4 rounded-full border-white border-2 ${post.isActive ? 'bg-[#10B981]': 'bg-[#FF3434]'}"></div>
                 <img class="w-18 h-18 rounded-2xl" src="${post.image}" alt="">
             </div>
-            <div class="flex flex-col">
+            <div class="flex flex-col w-full">
                 <pre class="mb-3 font-inter font-medium text-sm text-[#12132DCC]"># ${post.category}     Author: ${post.author.name}</pre>
                 <h1 class="mb-4 let-title">${post.title}</h1>
                 <p class="text-extra-light-gray">${post.description}</p>
