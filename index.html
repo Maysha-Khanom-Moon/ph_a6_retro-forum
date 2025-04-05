@@ -35,6 +35,13 @@
             padding: 24px 32px;
             border: 0px;
         }
+        .read-me-btn {
+            color: #FFF;
+            background-color: #10B981;
+            width: 28px;
+            height: 28px;
+            border-radius: 32px;
+        }
 
         .let-title {
             color: #12132D;
@@ -154,28 +161,35 @@
                 <div id="lets-left-section" class="flex flex-col gap-3 lg:gap-6 lg:w-2/3">
                     <!-- card -->
                     <div class="p-6 lg:p-10 flex flex-col lg:flex-row gap-3 lg:gap-6 rounded-3xl bg-[#797DFC1A]">
+                        <!-- image -->
                         <div class="relative">
                             <div class="absolute left-15 h-4 w-4 bg-red-500 rounded-full"></div>
                             <img class="w-18 h-18 rounded-2xl" src="https://i.ibb.co/VYGSkLz/pexels-jeshootscom-442576.jpg" alt="">
                         </div>
+                        <!-- details -->
                         <div class="flex flex-col">
                             <pre class="mb-3 font-inter font-medium text-sm text-[#12132DCC]"># Music    Author: Awlad Hossain</pre>
                             <h1 class="mb-4 let-title">10 Kids Unaware of Their Halloween Costume</h1>
                             <p class="text-extra-light-gray">It’s one thing to subject yourself to ha Halloween costume mishap because, hey that’s your prerogative</p>
                             <hr class="my-3 lg:my-5 border-dashed border-[#12132D40]">
-                            <div class="flex justify-start gap-6 text-extra-light-gray">
-                                <div class="flex items-center gap-3">
-                                    <i class="fa-regular fa-message"></i>
-                                    <p>560</p>
+                            <!-- info -->
+                            <div class="flex justify-between">
+                                <div class="flex justify-start gap-6 text-extra-light-gray">
+                                    <div class="flex items-center gap-3">
+                                        <i class="fa-regular fa-message"></i>
+                                        <p>560</p>
+                                    </div>
+                                    <div class="flex items-center gap-3">
+                                        <i class="fa-regular fa-eye"></i>
+                                        <p>1,568</p>
+                                    </div>
+                                    <div class="flex items-center gap-3">
+                                        <i class="fa-regular fa-clock"></i>
+                                        <p>5 min</p>
+                                    </div>
                                 </div>
-                                <div class="flex items-center gap-3">
-                                    <i class="fa-regular fa-eye"></i>
-                                    <p>1,568</p>
-                                </div>
-                                <div class="flex items-center gap-3">
-                                    <i class="fa-regular fa-clock"></i>
-                                    <p>5 min</p>
-                                </div>
+
+                                <button id="read-me" class="btn read-me-btn"><i class="fa-regular fa-envelope-open"></i></button>
                             </div>
                         </div>
                     </div>     
